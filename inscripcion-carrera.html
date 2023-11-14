@@ -335,13 +335,12 @@
                 </div>
 
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-1 form-section" id="SiAdeudaMaterias">
-                    <div class="col-6">
+                    <div class="col-6" id="MateriasAdeuda">
                         <!-- Name input-->
-                        <div class="form-floating mb-1">
+                        <div class="form-floating mb-1" >
                             <input class="form-control" name="MateriasAdeuda" id="MateriasAdeuda" type="number"
                                 placeholder="Ingrese cantidad de materias" />
                             <label for="MateriasAdeuda">¿Cuántas materias debe?</label>
-                            <!-- <option for="name">¿Cuántas materias debe?></option> -->
                         </div>
                     </div>
                     <div class="col-6">
@@ -399,7 +398,7 @@
                     <div class="col-3">
                         <!-- Name input-->
                         <div class="form-floating mb-1">
-                            <input class="form-control" name="promedio" id="promedio" type="text"
+                            <input class="form-control" name="promedio" id="promedio" type="number"
                                 placeholder="promedio " />
                             <label for="promedio">Promedio</label>
                         </div>
@@ -449,7 +448,7 @@
                             <!-- Email address input-->
                             <div class="form-floating mb-1">
                                 <input class="form-control" name="MayorPromedio" id="MayorPromedio"
-                                    type="text" placeholder="MayorPromedio" />
+                                    type="number" placeholder="MayorPromedio" />
                                 <label for="MayorPromedio">Promedio</label>
                             </div>
                         </div>
@@ -514,7 +513,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" id="sitrabaja">
                         Sector de Trabajo:
                         <div class="input-group mb-1">
                             <div class="col-12">
@@ -602,7 +601,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center mb-1 form-section" id="titulo2">
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-1 form-section" id="sitrabajah">
                     <div class="col">
                         Horas de trabajo diario:
                         <div class="input-group mb-1">
@@ -659,7 +658,7 @@
                         </div>
                     </div>
                     <!-- VIVE CON -->
-                    <div class="row gx-4 gx-lg-5 justify-content-center mb-1 form-section" id="titulo2">
+                    <div class="row gx-4 gx-lg-5 justify-content-center mb-1 form-section" id="vivesolo">
                         <div class="col">
                             <label class="d-block mb-1">Vive con:</label>
                             <div class="input-group mb-1">
@@ -694,7 +693,7 @@
                                 </div>
 
                                 <div class="d-inline mb-1">
-                                    <input class="form" name="FamiliaresACargoNo" id="FamiliaresACargoNo" type="radio" value="0" />
+                                    <input class="form" name="FamiliaresACargoNo" id="FamiliaresACargoNo" type="radio" value="0"  />
                                     <label for="FamiliaresACargoNo">NO</label>
                                 </div>
                             </div>
@@ -957,7 +956,7 @@
                             <div class="col-6">
                                 <label class="d-block mb-1">¿Utiliza Redes Sociales?</label>
                                 <div class="d-inline mb-1">
-                                    <input class="form" name="UsaRedesSocialesSI" id="UsaRedesSocialesSI" type="radio" value="1" />
+                                    <input class="form" name="UsaRedesSocialesSI" id="UsaRedesSocialesSI" type="radio" value="1" checked/>
                                     <label for="UsaRedesSocialesSI">SI</label>
                                 </div>
 

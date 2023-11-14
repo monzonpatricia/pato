@@ -6,8 +6,10 @@ $(document).ready(function () {
     $('#Enfermeria').hide();
     $('#Contable').hide();
     $('#Publica').hide();
-    $('#MateriasAdeuda').hide();
-    $('#DescripcionMateriasAdeuda').hide();
+    $('#SiAdeudaMaterias').hide();
+    $('#sitrabaja').hide();
+    $('#sitrabajah').hide();
+    $('#vivesolo').hide();
 
 
 
@@ -49,16 +51,37 @@ $(document).ready(function () {
         }
     })
 
-
+    // si tiene titulo
     $("#TituloSecundarioNO").on('click', function () {
         $('#MateriasAdeuda').show();
         $('#DescripcionMateriasAdeuda').show();
+        $('#SiAdeudaMaterias').show();
+
     })
     $("#TituloSecundarioSI").on('click', function () {
         $('#MateriasAdeuda').hide();
         $('#DescripcionMateriasAdeuda').hide();
+        $('#SiAdeudaMaterias').hide();
+
     })
 
+    // si trabaja
+    $("#TrabajaSI").on('click', function () {
+        $('#sitrabaja').show();
+        $('#sitrabajah').show();
+
+    })
+    $("#TrabajaNO").on('click', function () {
+        $('#sitrabaja').hide();
+        $('#sitrabajah').hide();
+    })
+
+    $("#ViveSoloSI").on('click', function () {
+        $('#vivesolo').hide();
+    })
+    $("#ViveSoloNO").on('click', function () {
+        $('#vivesolo').show();
+    })
 
 
 

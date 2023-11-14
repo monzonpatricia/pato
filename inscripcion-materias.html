@@ -998,7 +998,6 @@
                     <input class="form-control" name="MateriasAdeuda" id="MateriasAdeuda" type="number"
                         placeholder="Ingrese cantidad de materias" />
                     <label for="MateriasAdeuda">¿Cuántas materias debe?</label>
-                    <!-- <option for="name">¿Cuántas materias debe?></option> -->
                 </div>
             </div>
             <div class="col-6">
@@ -1056,7 +1055,7 @@
             <div class="col-3">
                 <!-- Name input-->
                 <div class="form-floating mb-1">
-                    <input class="form-control" name="promedio" id="promedio" type="text" placeholder="promedio " />
+                    <input class="form-control" name="promedio" id="promedio" type="number" placeholder="promedio " />
                     <label for="promedio">Promedio</label>
                 </div>
             </div>
@@ -1104,7 +1103,7 @@
                 <div class="col-6">
                     <!-- Email address input-->
                     <div class="form-floating mb-1">
-                        <input class="form-control" name="MayorPromedio" id="MayorPromedio" type="text"
+                        <input class="form-control" name="MayorPromedio" id="MayorPromedio" type="number"
                             placeholder="MayorPromedio" />
                         <label for="MayorPromedio">Promedio</label>
                     </div>
@@ -1165,12 +1164,12 @@
                     </div>
 
                     <div class="d-inline mb-1">
-                        <input class="form" name="Trabaja" id="TrabajaNO" type="radio" value="0" />
+                        <input class="form" name="Trabaja" id="TrabajaNO" type="radio" value="0" checked />
                         <label for="TrabajaNO">NO</label>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" id="sitrabaja">
                 Sector de Trabajo:
                 <div class="input-group mb-1">
                     <div class="col-12">
@@ -1258,7 +1257,7 @@
                 </div>
             </div>
         </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center mb-1 form-section" id="titulo2">
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-1 form-section" id="sitrabajah">
             <div class="col">
                 Horas de trabajo diario:
                 <div class="input-group mb-1">
@@ -1281,21 +1280,21 @@
                     </div>
 
                 </div>
-                <div class="col-6">
-                    <!-- Name input-->
-                    <label class="d-block mb-1">¿Es pensionado o Jubilado?</label>
-                    <div class="d-inline mb-1">
-                        <input class="form" name="PensionadoJubiladoSI" id="PensionadoJubiladoSI" type="radio"
-                            value="1" />
-                        <label for="PensionadoJubiladoSI">SI</label>
-                    </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <!-- Name input-->
+            <label class="d-block mb-1">¿Es pensionado o Jubilado?</label>
+            <div class="d-inline mb-1">
+                <input class="form" name="PensionadoJubiladoSI" id="PensionadoJubiladoSI" type="radio"
+                    value="1" />
+                <label for="PensionadoJubiladoSI">SI</label>
+            </div>
 
-                    <div class="d-inline mb-1">
-                        <input class="form" name="PensionadoJubiladoNO" id="PensionadoJubiladoNO" type="radio"
-                            value="0" />
-                        <label for="PensionadoJubiladoNO">NO</label>
-                    </div>
-                </div>
+            <div class="d-inline mb-1">
+                <input class="form" name="PensionadoJubiladoNO" id="PensionadoJubiladoNO" type="radio"
+                    value="0" />
+                <label for="PensionadoJubiladoNO">NO</label>
             </div>
         </div>
         <hr>
@@ -1305,17 +1304,17 @@
                 <!-- Name input-->
                 <label class="d-block mb-1">Vive Solo</label>
                 <div class="d-inline mb-1">
-                    <input class="form" name="ViveSoloSI" id="ViveSoloSI" type="radio" value="1" />
+                    <input class="form" name="vivesolo" id="ViveSoloSI" type="radio" value="1" checked/>
                     <label for="ViveSoloSI">SI</label>
                 </div>
 
                 <div class="d-inline mb-1">
-                    <input class="form" name="ViveSoloNO" id="ViveSoloNO" type="radio" value="0" />
+                    <input class="form" name="vivesolo" id="ViveSoloNO" type="radio" value="0" />
                     <label for="ViveSoloNO">NO</label>
                 </div>
             </div>
             <!-- VIVE CON -->
-            <div class="row gx-4 gx-lg-5 justify-content-center mb-1 form-section" id="titulo2">
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-1 form-section"  id="vivesolo">
                 <div class="col">
                     <label class="d-block mb-1">Vive con:</label>
                     <div class="input-group mb-1">
@@ -1620,7 +1619,7 @@
                         <label class="d-block mb-1">¿Utiliza Redes Sociales?</label>
                         <div class="d-inline mb-1">
                             <input class="form" name="UsaRedesSocialesSI" id="UsaRedesSocialesSI" type="radio"
-                                value="1" />
+                                value="1" checked/>
                             <label for="UsaRedesSocialesSI">SI</label>
                         </div>
 
